@@ -1,0 +1,22 @@
+# QQ Bot Dictionary File
+# Format: keyword|reply
+# Reply types:
+#   plain text with {{time}} {{dice}} {{joke}} {{fortune}} {{number}} placeholders
+#   {"type":"keyboard","content":"header","buttons":[["btn1","btn2"],["btn3"]]}
+#   {"type":"markdown","content":"# Title\n\n- item"}
+
+菜单|{"type":"keyboard","content":"== 功能菜单 ==","buttons":[["帮助","娱乐"],["系统","主人列表"],["每日运势","掷骰子"],["笑话","猜数字"],["版本","天气"]]}
+帮助|{"type":"markdown","content":"# Bot 功能列表\n\n## 基础功能\n- **帮助** - 查看此帮助\n- **菜单** - 打开功能菜单面板\n- **时间** - 查看当前时间\n- **版本** - 查看Bot版本\n\n## 娱乐功能\n- **娱乐** - 打开娱乐中心\n- **每日运势** - 查看今日运势\n- **掷骰子** - 掷一枚骰子\n- **笑话** - 随机讲个笑话\n- **猜数字** - 数字猜谜游戏\n\n## 系统功能\n- **系统** - 打开系统设置\n- **设置主人** - 绑定超级主人\n- **任命助手** - 任命小主人\n- **撤销助手** - 撤销小主人\n- **主人列表** - 查看所有主人"}
+时间|当前时间：{{time}}
+版本|QQ Bot Platform v1.0.0
+
+娱乐|{"type":"keyboard","content":"== 娱乐中心 ==","buttons":[["每日运势","掷骰子"],["猜数字","笑话"],["返回菜单"]]}
+每日运势|{{fortune}}
+掷骰子|掷出了：{{dice}} 点。再发「掷骰子」可以重新掷！
+笑话|{{joke}}
+猜数字|我想了一个1-100的数字。发送 猜XX 来猜！{{number}}
+
+系统|{"type":"keyboard","content":"== 系统设置 ==","buttons":[["开机","关机"],["设置主人","任命助手"],["撤销助手","主人列表"],["返回菜单"]]}
+主人列表|{"type":"markdown","content":"# 主人系统\n\n主人列表由开关机控制插件动态生成，发送「主人列表」查看"}
+主人系统|{"type":"markdown","content":"# 主人系统\n\n发送「主人列表」查看当前所有主人信息\n发送「设置主人」绑定超级主人"}
+天气|天气查询功能开发中，敬请期待！
